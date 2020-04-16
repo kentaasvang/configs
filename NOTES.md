@@ -14,3 +14,5 @@ Steps to setup terminal:
 
 5. Install sublime
 brew cask install sublime-text
+
+6. make bash the default shell
