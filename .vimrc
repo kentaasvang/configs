@@ -16,3 +16,7 @@ highlight LineNr ctermfg=darkgrey
 set hlsearch
 
 
+""" turn on line-folding
+set foldmethod=manual
+""" this two commands makes 'mkview' and 'loadview' automatic, so that folds
+""" are remembered
