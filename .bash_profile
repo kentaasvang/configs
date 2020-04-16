@@ -49,3 +49,53 @@ parse_git_branch() {
 
 export PS1="\u:\[\e[0;32m\]\w\[\e[m\]\[\033[35m\]\$(parse_git_branch)\[\033[00m\] $ "
 #export PS1="\u:\w\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+
+: '
+********* Styling for the ls-command *************** *****************
+
+The colors of the ls-output can be specified with a variable called LSCOLORS. To enable using this you have to set CLICOLOR to 1
+
+colors:
+    a black
+    b red
+    c green
+    d brown
+    e blue
+    f magenta
+    g cyan
+    h light grey
+
+    A bold black
+    B bold red
+    C bold green
+    D bold brown
+    E bold blue
+    F bold magenta
+    G bold cyan
+    H bold light grey
+
+order of attributes:
+    1. directory
+    2. symbolic link
+    3. socket
+    3. pipe
+    5. executable
+    6. block special
+    7. character special
+    8. executable with setuid bit set
+    9. executable with setgid bit set
+    10. directory writable to others, with sticky bit
+    11. directory writable to others, without sticky bit
+
+default: exfxcxdxbxegedabagacad
+
+'
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+
+# -G is for colored output
+# -F shows different symbols after folders, executables etc
+# add 'G' to all flags to get colored output
+alias ls="ls -F"
