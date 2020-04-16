@@ -11,8 +11,15 @@ git:
 	git config --global core.editor vi
 	git config --global core.excludesfile ~/.gitignore
 
+remove-git:
+	brew uninstall git
+	rm ~/.gitconfig
+
 sublime:
 	brew cask install sublime-text
+
+remove-sublime:
+	brew cask uninstall sublime-text
 
 vim:
 	cp ./.vimrc ~/.vimrc
