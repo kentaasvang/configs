@@ -22,4 +22,5 @@ remove-vim:
 
 
 bash:
+	chsh -s /bin/bash
 	cp ./.bash_profile ~/.bash_profile
