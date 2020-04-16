@@ -11,6 +11,14 @@ git:
 	git config --global core.editor vi
 	git config --global core.excludesfile ~/.gitignore
 
+python:
+	brew install python3
+	brew install python@3.8
+
+remove-python:
+	brew uninstall python3
+	brew uninstall python@3.8
+
 remove-git:
 	brew uninstall git
 	rm ~/.gitconfig
@@ -28,7 +36,6 @@ vim:
 remove-vim:
 	rm ~/.vimrc
 	rm -rf ~/.vim/ftplugin
-
 
 bash:
 	chsh -s /bin/bash
