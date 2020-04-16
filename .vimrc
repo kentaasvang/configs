@@ -20,3 +20,5 @@ set hlsearch
 set foldmethod=manual
 """ this two commands makes 'mkview' and 'loadview' automatic, so that folds
 """ are remembered
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
