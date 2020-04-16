@@ -1,5 +1,6 @@
 # My configuration files
 
+Using iTerm2
 
 **Notes:**
 - The terminal-prompt is only compatible with the bash-shell. If you are using /bin/zsh it wont work.
