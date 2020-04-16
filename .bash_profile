@@ -99,3 +99,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # -F shows different symbols after folders, executables etc
 # add 'G' to all flags to get colored output
 alias ls="ls -F"
+
+
+#################### This is to put brew-install python in my path
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
