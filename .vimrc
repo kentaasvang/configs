@@ -24,3 +24,7 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 """ set color for fold highlighting
 highlight Folded ctermbg=235
+
+
+""" make it possible to scroll with the mouse
+set mouse=a
