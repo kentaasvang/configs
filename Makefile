@@ -1,6 +1,13 @@
 
 homebrew:
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" brew doctor
+
+git:
+	brew install git
+	git config --global user.name "Kent Åsvang"
+	git config --global user.email kentaasvang@gmail.com
+	git config --global core.editor vi
+	git config --global core.excludesfile ~/.gitignore
 
 vim:
 	cp ./.vimrc ~/.vimrc
