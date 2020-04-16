@@ -7,3 +7,7 @@ vim:
 remove-vim:
 	rm ~/.vimrc
 	rm -rf ~/.vim/ftplugin
+
+
+bash:
+	cp ./.bash_profile ~/.bash_profile
