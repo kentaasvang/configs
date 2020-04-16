@@ -1,6 +1,6 @@
 .PHONY: all
 
-all: homebrew git sublime vim bash
+all: homebrew git sublime vim bash python
 
 homebrew:
 	./install_homebrew.sh
