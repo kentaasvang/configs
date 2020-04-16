@@ -22,3 +22,5 @@ set foldmethod=manual
 """ are remembered
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
+""" set color for fold highlighting
+highlight Folded ctermbg=235
