@@ -1,7 +1,9 @@
+.PHONY: all
+
+all: homebrew git sublime vim bash
 
 homebrew:
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" brew doctor
-
+	./install_homebrew.sh
 git:
 	brew install git
 	git config --global user.name "Kent Åsvang"
