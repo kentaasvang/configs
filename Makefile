@@ -40,3 +40,10 @@ remove-vim:
 bash:
 	chsh -s /bin/bash
 	cp ./.bash_profile ~/.bash_profile
+
+postgres:
+	brew install postgres
+	brew install pgcli
+	@echo "\n\n# Making the 'psql'-command available from the PATH" >> ~/.bash_profile;
+	@echo 'export PATH="/usr/local/opt/libpq/bin:$PATH"' >> ~/.bash_profile;
+	
