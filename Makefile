@@ -12,7 +12,7 @@ git:
 	git config --global core.excludesfile ~/.gitignore
 
 python:
-	brew install python3
+	brew install python
 	brew install python@3.8
 
 remove-python:
@@ -42,8 +42,9 @@ bash:
 	cp ./.bash_profile ~/.bash_profile
 
 postgres:
+	rm -rf /usr/local/var/postgres
 	brew install postgres
-	brew install pgcli
-	@echo "\n\n# Making the 'psql'-command available from the PATH" >> ~/.bash_profile;
-	@echo 'export PATH="/usr/local/opt/libpq/bin:$PATH"' >> ~/.bash_profile;
 	
+remove-postgres:
+	brew uinstall postgres
+	rm -rf /usr/local/var/postgres
