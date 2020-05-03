@@ -38,6 +38,14 @@ remove-vim:
 	rm ~/.vimrc
 	rm -rf ~/.vim/ftplugin
 
+tmux:
+	brew install tmux
+	cp ./.tmux.conf ~/.tmux.conf
+
+remove-tmux:
+	brew uninstall tmux
+	rm ~/.tmux.conf
+
 bash:
 	chsh -s /bin/bash
 	cp ./.bash_profile ~/.bash_profile
