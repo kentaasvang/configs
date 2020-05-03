@@ -1,3 +1,4 @@
+
 """ enable vim to detect filetype, and to use filetype plugins
 filetype plugin on
 
@@ -18,16 +19,6 @@ highlight LineNr ctermfg=darkgrey
 
 """ turn on search highlighting. Without this, search are not highlighted
 set hlsearch
-
-
-""" turn on line-folding
-set foldmethod=manual
-""" this two commands makes 'mkview' and 'loadview' automatic, so that folds
-""" are remembered
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
-""" set color for fold highlighting
-highlight Folded ctermbg=235
 
 
 """ make it possible to scroll with the mouse
