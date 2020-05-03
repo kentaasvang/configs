@@ -28,3 +28,7 @@ highlight Folded ctermbg=235
 
 """ make it possible to scroll with the mouse
 set mouse=a
+
+
+""" set binding between .ejs files and html files to get html-syntax on ejs
+au BufNewFile,BufRead *.ejs set filetype=html
