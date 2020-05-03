@@ -2,6 +2,10 @@
 filetype plugin on
 
 
+""" set binding between .ejs files and html files to get html-syntax on ejs
+au BufNewFile,BufRead *.ejs set filetype=html
+
+
 """ Turn on syntax highlighting
 syntax enable
 
@@ -30,5 +34,3 @@ highlight Folded ctermbg=235
 set mouse=a
 
 
-""" set binding between .ejs files and html files to get html-syntax on ejs
-au BufNewFile,BufRead *.ejs set filetype=html
