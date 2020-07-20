@@ -47,7 +47,7 @@ parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\u:\[\e[0;32m\]\w\[\e[m\]\[\033[35m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\u :: \[\e[1;31m\]\w\[\e[m\]\[\033[35m\]\$(parse_git_branch)\[\033[00m\] $ "
 #export PS1="\u:\w\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 
@@ -103,3 +103,9 @@ alias ls="ls -F"
 
 #################### This is to put brew-install python in my path
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
+################### VSCODE
+export PATH="/usr/local/bin/:$PATH"
+
+################## RUST
+export PATH="$HOME/.cargo/bin:$PATH"
