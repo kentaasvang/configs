@@ -31,8 +31,10 @@ remove-sublime:
 
 vim:
 	cp ./.vimrc ~/.vimrc
-	mkdir -p ~/.vim/ftplugin && cp ./python.vim ~/.vim/ftplugin/python.vim
+	mkdir -p ~/.vim/ftplugin
+	cp ./python.vim ~/.vim/ftplugin/python.vim
 	cp ./html.vim ~/.vim/ftplugin/html.vim
+	cp ./php.vim ~/.vim/ftplugin/php.vim
 
 remove-vim:
 	rm ~/.vimrc
