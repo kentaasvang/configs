@@ -49,7 +49,6 @@ remove-tmux:
 	rm ~/.tmux.conf
 
 bash:
-	chsh -s /bin/bash
 	cp ./.bash_profile ~/.bash_profile
 
 postgres:
