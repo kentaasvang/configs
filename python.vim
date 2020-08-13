@@ -13,6 +13,10 @@ setlocal tabstop=4 shiftwidth=4 expandtab
 setlocal ai smarttab
 
 
+""" relative numberes
+set relativenumber
+
+
 """ color docstrings like comments if they have non-whitespace character
 """ preceeding them
 syn region Comment start=/^[\t ]*"""/ end=/"""/ keepend contains=pythonEscape,pythonTodo,@Spell
