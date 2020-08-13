@@ -10,8 +10,10 @@ alias grep="grep --color=auto"
 : '
 *********** TERMINAL PROMPT ******************
 Styling for the terminal prompt
+	
+    color:
+    \[\e[x;ym\] SOME SHIT \[\e[m\] 
 
-    \e[x;ym SOME SHIT \e[m
 
     \e[ = start of color scheme
     x;y = color pair
@@ -47,8 +49,10 @@ parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\u :: \[\e[1;31m\]\w\[\e[m\]\[\033[35m\]\$(parse_git_branch)\[\033[00m\] $ "
+#export PS1="\u\[\e[1;31m\] :: \[\e[m\]\[\e[1;31m\]\W\[\e[m\]\[\033[35m\]\$(parse_git_branch)\[\033[00m\] \[\e[1;33m\]››\[\e[m\] "
+export PS1="\u\[\e[1;31m\] :: \[\e[m\]\[\e[1;31m\]\W\[\e[m\]\[\033[37m\]\$(parse_git_branch)\[\033[00m\] \[\e[1;31m\]››\[\e[m\] "
 #export PS1="\u:\w\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+
 
 
 : '
