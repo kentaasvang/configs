@@ -25,6 +25,11 @@ syn region Comment start=/^[\t ]*"""/ end=/"""/ keepend contains=pythonEscape,py
 """ color for comments in python
 highlight Comment ctermfg=darkgrey
 
+""" color string in python
+highlight String ctermfg=darkgreen
+
+""" color numbers in python
+highlight Number ctermfg=darkgreen
 
 """ colors set in .vimrc are overwritten by the colorscheme in this file
 """ because of that I have to manually set the colors her as well
