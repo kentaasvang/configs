@@ -35,13 +35,16 @@ sublime: homebrew
 remove-sublime: homebrew
 	brew cask uninstall sublime-text
 
-vim:
+vim: python-vim
 	cp ./.vimrc ~/.vimrc
 	mkdir -p ~/.vim/ftplugin
 	mkdir -p ~/.vim/syntax
-	cp ./python.vim ~/.vim/ftplugin/python.vim
 	cp ./html.vim ~/.vim/ftplugin/html.vim
 
+python-vim:
+	mkdir -p ~/.vim/ftplugin
+	cp ./python.vim ~/.vim/ftplugin/python.vim
+	
 remove-vim:
 	rm ~/.vimrc
 	rm -rf ~/.vim/ftplugin
