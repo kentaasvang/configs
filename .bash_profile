@@ -45,16 +45,20 @@ Notes:
 ******* git branch name in prompt function *********
 
 '
+
+# Example: "kent ~/dotfiles (master) #", no colors
+SIMPLE_PROMPT="\u \W\$(parse_git_branch) # "
+
+# function to get current working git-branch
 parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export PS1="\u\[\e[1;31m\] :: \[\e[m\]\[\e[1;35m\][\w]\[\e[m\]\[\033[37m\]\$(parse_git_branch)\[\033[00m\] \[\e[1;31m\]››\[\e[m\] "
+export PS1=$SIMPLE_PROMPT
 
 # old promts
 #export PS1="\u\[\e[1;31m\] :: \[\e[m\]\[\e[1;31m\]\W\[\e[m\]\[\033[35m\]\$(parse_git_branch)\[\033[00m\] \[\e[1;33m\]››\[\e[m\] "
 #export PS1="\u:\w\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
-
 
 
 : '
@@ -106,7 +110,6 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # add 'G' to all flags to get colored output
 alias ls="ls -F"
 
-
 #################### This is to put brew-install python in my path
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 
@@ -115,3 +118,5 @@ export PATH="/usr/local/bin/:$PATH"
 
 ################## RUST
 export PATH="$HOME/.cargo/bin:$PATH"
+
+cd
