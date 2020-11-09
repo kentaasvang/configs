@@ -21,6 +21,14 @@ help:
 	@echo "\tInstalls configure-files for vim"
 	@echo ${YELLOW}remove-vim${NOCOLOR}
 	@echo "\tUninstalls configure-files for vim"
+	@echo ${YELLOW}python-vim${NOCOLOR}
+	@echo "\tInstalls configure-files for python-vim"
+	@echo ${YELLOW}remove-python-vim${NOCOLOR}
+	@echo "\tUninstalls configure-files for pythonvim"
+	@echo ${YELLOW}html-vim${NOCOLOR}
+	@echo "\tInstalls configure-files for html-vim"
+	@echo ${YELLOW}remove-html-vim${NOCOLOR}
+	@echo "\tUninstalls configure-files for html-vim"
 	@echo ${YELLOW}tmux${NOCOLOR}
 	@echo "\tInstall and setup tmux"
 	@echo ${YELLOW}remove-tmux${NOCOLOR}
@@ -85,11 +93,21 @@ python-vim:
 	cp ./python.vim ~/.vim/ftplugin/python.vim
 	@echo ${GREEN}Removing configured vim syntax for python..${NOCOLOR};
 	
+remove-python-vim:
+	@echo ${GREEN}Removing python.vim files..${NOCOLOR};
+	rm ~/.vim/ftplugin/python.vim
+	@echo ${GREEN}Finished..${NOCOLOR};
+
 html-vim:
 	@echo ${GREEN}Configuring vim syntax for html..${NOCOLOR};
 	mkdir -p ~/.vim/ftplugin
 	cp ./html.vim ~/.vim/ftplugin/html.vim
 	@echo ${GREEN}Removing configured vim syntax for html..${NOCOLOR};
+
+remove-html-vim:
+	@echo ${GREEN}Removing html.vim files..${NOCOLOR};
+	rm ~/.vim/ftplugin/html.vim
+	@echo ${GREEN}Finished..${NOCOLOR};
 
 tmux: homebrew
 	@echo ${GREEN}Installing tmux and config-files..${NOCOLOR};
