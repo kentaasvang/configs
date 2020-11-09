@@ -19,6 +19,7 @@ Styling for the terminal prompt
     x;y = color pair
     SOME SHIT = SOME SHIT TO COLOR
     \e[m = stop color scheme 
+
 color pairs: 
     black   = 0;30  dark grey   = 1;30
     blue    = 0;34  light blue  = 1;34
@@ -47,7 +48,7 @@ Notes:
 '
 
 # Example: "kent ~/dotfiles (master) #", no colors
-SIMPLE_PROMPT="\u \W\$(parse_git_branch) # "
+SIMPLE_PROMPT="\u \w\$(parse_git_branch) # "
 
 # function to get current working git-branch
 parse_git_branch() {
@@ -118,5 +119,3 @@ export PATH="/usr/local/bin/:$PATH"
 
 ################## RUST
 export PATH="$HOME/.cargo/bin:$PATH"
-
-cd
