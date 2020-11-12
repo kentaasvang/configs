@@ -119,3 +119,6 @@ export PATH="/usr/local/bin/:$PATH"
 
 ################## RUST
 export PATH="$HOME/.cargo/bin:$PATH"
+
+################## My Personal Binaries
+export PATH="$HOME/.my_binaries/bin:$PATH"
