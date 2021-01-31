@@ -14,11 +14,6 @@ setlocal tabstop=2 shiftwidth=2 expandtab
 setlocal ai smarttab
 
 
-""" color docstrings like comments if they have non-whitespace character
-""" preceeding them
-""" syn region Comment start=/^[\t ]*"""/ end=/"""/ keepend contains=pythonEscape,pythonTodo,@Spell
-
-
 """ color for comments
 highlight Comment ctermfg=darkgrey
 
