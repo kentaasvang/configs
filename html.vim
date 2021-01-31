@@ -6,7 +6,7 @@ colorscheme peachpuff
 
 
 """ turn tabs into spaces
-setlocal tabstop=4 shiftwidth=4 expandtab
+setlocal tabstop=2 shiftwidth=2 expandtab
 
 
 """ settings for identation

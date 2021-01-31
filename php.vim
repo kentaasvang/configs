@@ -16,7 +16,7 @@ setlocal ai smarttab
 
 """ color docstrings like comments if they have non-whitespace character
 """ preceeding them
-syn region Comment start=/^[\t ]*"""/ end=/"""/ keepend contains=pythonEscape,pythonTodo,@Spell
+""" syn region Comment start=/^[\t ]*"""/ end=/"""/ keepend contains=pythonEscape,pythonTodo,@Spell
 
 
 """ color for comments
