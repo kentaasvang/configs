@@ -98,6 +98,17 @@ remove-python-vim:
 	rm ~/.vim/ftplugin/python.vim
 	@echo ${GREEN}Finished..${NOCOLOR};
 
+php-vim:
+	@echo ${GREEN}Configuring vim syntax for php..${NOCOLOR};
+	mkdir -p ~/.vim/ftplugin
+	cp ./.php.vim ~/.vim/ftplugin/php.vim
+	@echo ${GREEN}Removing configured vim syntax for php..${NOCOLOR};
+	
+remove-php-vim:
+	@echo ${GREEN}Removing php.vim files..${NOCOLOR};
+	rm ~/.vim/ftplugin/php.vim
+	@echo ${GREEN}Finished..${NOCOLOR};
+
 html-vim:
 	@echo ${GREEN}Configuring vim syntax for html..${NOCOLOR};
 	mkdir -p ~/.vim/ftplugin
