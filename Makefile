@@ -29,6 +29,10 @@ help:
 	@echo "\tInstalls configure-files for html-vim"
 	@echo ${YELLOW}remove-html-vim${NOCOLOR}
 	@echo "\tUninstalls configure-files for html-vim"
+	@echo ${YELLOW}javascript-vim${NOCOLOR}
+	@echo "\tInstalls configure-files for javascript-vim"
+	@echo ${YELLOW}remove-javascript-vim${NOCOLOR}
+	@echo "\tUninstalls configure-files for javascriptvim"
 	@echo ${YELLOW}tmux${NOCOLOR}
 	@echo "\tInstall and setup tmux"
 	@echo ${YELLOW}remove-tmux${NOCOLOR}
@@ -96,6 +100,17 @@ python-vim:
 remove-python-vim:
 	@echo ${GREEN}Removing python.vim files..${NOCOLOR};
 	rm ~/.vim/ftplugin/python.vim
+	@echo ${GREEN}Finished..${NOCOLOR};
+
+javascript-vim:
+	@echo ${GREEN}Configuring vim syntax for javascript..${NOCOLOR};
+	mkdir -p ~/.vim/ftplugin
+	cp ./javascript.vim ~/.vim/ftplugin/javascript.vim
+	@echo ${GREEN}Removing configured vim syntax for javascript..${NOCOLOR};
+	
+remove-javascript-vim:
+	@echo ${GREEN}Removing javascript.vim files..${NOCOLOR};
+	rm ~/.vim/ftplugin/javascript.vim
 	@echo ${GREEN}Finished..${NOCOLOR};
 
 php-vim:
