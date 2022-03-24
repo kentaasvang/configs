@@ -12,7 +12,6 @@
 	lg = log --oneline
 	last = log -1 HEAD
 	ch = checkout
-	p = pull
 [pull]
 	ff = only
 [push]
