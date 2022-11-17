@@ -120,3 +120,17 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+# .NET
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
+
+# Rust
+export PATH=$PATH:$HOME/.cargo/bin
+
+
+# Golang
+export PATH=$PATH:/usr/local/go/bin
+
+
