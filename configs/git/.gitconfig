@@ -12,6 +12,7 @@
 	lg = log --oneline
 	last = log -1 HEAD
 	ch = checkout
+	diffn = diff --name-only
 [pull]
 	ff = only
 [push]
