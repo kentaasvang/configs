@@ -5,6 +5,8 @@
 	ui = always
 [color]
 	ui = true
+[init]
+	defaultBranch = main
 [alias]
 	c = commit
 	s = status
