@@ -21,7 +21,7 @@ def main():
 		exit(0)
 
 	script_to_run = join(scripts_path, scripts[menu_entry_index]) 
-	command = f"sh {script_to_run}"
+	command = f"bash {script_to_run}"
 
 	subprocess.call(command, shell=True)
 	
