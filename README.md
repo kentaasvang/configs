@@ -12,7 +12,7 @@ Config is managed by [chezmoi](https://www.chezmoi.io/).
 
     > $ Outputs changes that will be applied
 
-3. Apply changed
+3. Apply changes
 
     > $ chezmoi apply -v
     
