@@ -9,6 +9,9 @@ Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
 call plug#end()
 
+" Install Coc Plugins
+let g:coc_global_extensions = ["coc-json"]
+
 " May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
 " utf-8 byte sequence
 set encoding=utf-8
