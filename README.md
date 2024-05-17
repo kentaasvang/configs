@@ -18,7 +18,7 @@ Config is managed by [chezmoi](https://www.chezmoi.io/).
     
 ## Helpful commands
 
-**Update changes from github repository**
+**Pull changes from repository and apply them in a single command**
 
 > $ chezmoi update -v
 
