@@ -5,4 +5,5 @@ if status is-interactive
     if ! set -q TMUX
 	exec tmux
     end
+
 end
