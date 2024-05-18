@@ -8,7 +8,7 @@ call plug#end()
 ]]
 
 -- Install Coc Plugins
-vim.g.coc_global_extensions = {""}
+vim.g.coc_global_extensions = {"coc-pyright"}
 
 -- Settings
 vim.o.encoding = 'utf-8'
