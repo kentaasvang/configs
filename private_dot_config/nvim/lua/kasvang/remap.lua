@@ -1,3 +1,5 @@
+vim.g.mapleader = ' '  -- Space as leader key
+vim.g.maplocalleader = ' '  -- Space as local leader key
 
 -- Key mappings
 vim.api.nvim_set_keymap('i', '<TAB>', 'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_backspace() ? "<TAB>" : coc#refresh()', {expr = true, noremap = true, silent = true})
