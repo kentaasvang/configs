@@ -9,7 +9,7 @@ vim.fn["plug#"]("rust-lang/rust.vim")
 
 vim.fn["plug#"]("rose-pine/neovim", { as = "rose-pine" })
 vim.fn["plug#"]("lepture/vim-jinja")
-# vim.fn["plug#"]("github/copilot.vim")
+-- vim.fn["plug#"]("github/copilot.vim")
 
 vim.call("plug#end")
 
